@@ -78,7 +78,7 @@ export default function Hero() {
             text-[#151515]
           "
           >
-            Hey, I'm Sachin Saha.
+            Hey, I&apos;m Sachin Saha.
           </motion.h1>
 
           <motion.h2
