@@ -132,8 +132,21 @@ export default function PhoneMockup({
 }) {
   return (
     <div
-      className={`relative w-[220px] h-[450px] rounded-[2.2rem] bg-[#111] p-[10px] shadow-2xl shadow-black/20 ${className}`}
-    >
+className={`
+relative
+w-[150px]
+h-[305px]
+sm:w-[180px]
+sm:h-[370px]
+md:w-[220px]
+md:h-[450px]
+rounded-[2.2rem]
+bg-[#111]
+p-[10px]
+shadow-2xl
+shadow-black/20
+${className}
+`}    >
       <div className="absolute left-1/2 top-0 -translate-x-1/2 h-5 w-24 bg-[#111] rounded-b-2xl z-10" />
       <div className="h-full w-full rounded-[1.7rem] overflow-hidden bg-white">
         {kind === "balance" ? <BalanceScreen /> : <TransactionsScreen />}

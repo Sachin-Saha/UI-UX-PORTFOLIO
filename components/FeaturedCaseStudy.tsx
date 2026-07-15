@@ -11,7 +11,8 @@ export default function FeaturedCaseStudy() {
   return (
     <section id="case-study" className="py-24 md:py-32  overflow-hidden">
       <div className="max-w-container mx-auto px-6 md:px-10">
-        <div className="grid md:grid-cols-12 gap-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 items-center
+        ">
           {/* Phone mockups */}
           <div className="md:col-span-6 order-2 md:order-1">
             <motion.div
@@ -19,9 +20,21 @@ export default function FeaturedCaseStudy() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-              className="relative bg-blush rounded-[32px] py-16 px-6 md:px-10 flex items-center justify-center"
-            >
-              <div className="relative flex items-end gap-6">
+className="
+relative
+bg-blush
+rounded-[32px]
+py-10
+md:py-16
+px-3
+sm:px-6
+md:px-10
+flex
+items-center
+justify-center
+overflow-hidden
+"            >
+              <div className="relative flex items-end gap-2 md:gap-6">
                 <motion.div
                   animate={{ y: [0, -14, 0] }}
                   transition={{
@@ -29,7 +42,14 @@ export default function FeaturedCaseStudy() {
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="relative z-10 -mr-10 mb-6"
+                  className="
+relative
+z-10
+-mr-6
+md:-mr-10
+mb-4
+md:mb-6
+"
                 >
                   <PhoneMockup kind="transactions" className="scale-90" />
                 </motion.div>

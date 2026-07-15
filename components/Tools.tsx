@@ -72,7 +72,7 @@ export default function Tools() {
           high-fidelity design.
         </motion.p>
 
-        <div className="grid  grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5 md:gap-9">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 md:gap-9">
           {tools.map((tool, i) => (
             <motion.div
               key={tool.name}
@@ -92,8 +92,20 @@ export default function Tools() {
                 animate="rest"
                 variants={cardVariants}
                 transition={{ type: "spring", stiffness: 260, damping: 22 }}
-                className="group border h-40 w-60 flex aspect-square flex-col items-center justify-center gap-5 rounded-[28px] px-6 cursor-default"
-              >
+className="
+group
+w-full
+h-40
+flex
+flex-col
+items-center
+justify-center
+gap-5
+rounded-[28px]
+border
+px-6
+cursor-default
+"              >
                 <motion.div variants={iconVariants}>
                   {tool.kind === "icon" ? (
                     <tool.icon

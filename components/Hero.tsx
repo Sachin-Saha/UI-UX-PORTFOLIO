@@ -40,7 +40,23 @@ export default function Hero() {
       {/* Right Outline Circle */}
       <div className="hidden lg:block absolute right-10 top-[200px] h-56 w-56 rounded-full border border-[#ECE9E5]" />
 
-      <div className="mx-auto flex w-full max-w-[1380px] justify-center pt-36 gap-40  px-20 lg:px-20">
+      <div   className="
+    mx-auto
+    flex
+    flex-col-reverse
+    lg:flex-row
+    items-center
+    justify-between
+    w-full
+    max-w-[1380px]
+    px-6
+    sm:px-8
+    lg:px-20
+    pt-28
+    lg:pt-36
+    gap-12
+    lg:gap-32
+  ">
         {/* LEFT */}
 
         <motion.div
