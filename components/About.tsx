@@ -37,7 +37,17 @@ export default function About() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-80px" }}
-          className="font-body mr-[800px] text-[15px] tracking-[0.2em] uppercase text-muted mb-5"
+       className="
+flex
+items-center
+gap-4
+font-body
+text-[15px]
+tracking-[0.2em]
+uppercase
+text-muted
+mb-2
+"
         >
           — About
         </motion.p>
@@ -50,7 +60,7 @@ export default function About() {
             viewport={{ once: true, margin: "-80px" }}
             className="md:col-span-7"
           >
-            <h2 className="mt-[77px] font-display text-balance text-4xl md:text-5xl leading-[1.15] text-ink  mb-8">
+            <h2 className=" font-display text-balance text-4xl md:text-5xl leading-[1.15] text-ink  mb-8">
               Designing with intent, clarity, and a quiet attention to detail.
             </h2>
             <div className="space-y-5 font-body text-[15px]  leading-relaxed text-muted max-w-lg">
